@@ -9,7 +9,7 @@ import (
 	"strconv"
 )
 
-func readFromFile(filePath string) ([]int, error) {
+func ReadFromFile(filePath string) ([]int, error) {
 
 	file, err := os.Open(filePath)
 	if err != nil {

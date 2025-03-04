@@ -18,7 +18,9 @@ type TaskQueue struct {
 	tasks []Task
 	mutex Mutex.Mymutex
 }
-func (tq *TaskQueue)Set_id(num []int) () {
+func (tq *TaskQueue) Set_id(num []int) () {
+	
+	tq.tasks = make([]Task, len(num))
 	for i:= 0; i<len(num); i++ {
 		tq.tasks[i].ID = num[i]
 	}

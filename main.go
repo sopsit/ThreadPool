@@ -10,17 +10,17 @@ import (
 
 func main() {
 
-	ids, err := read.readFromFile("id.txt")
+	ids, err := read.ReadFromFile("id.txt")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	burst_times, err := read.readFromFile("burst_time.txt")
+	burst_times, err := read.ReadFromFile("burst_time.txt")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	arriving_times, err := read.readFromFile("arriving_time.txt")
+	arriving_times, err := read.ReadFromFile("arriving_time.txt")
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -29,4 +29,7 @@ func main() {
 	tq.Set_id(ids)
 	tq.Set_burst(burst_times)
 	tq.Set_arriving(arriving_times)
+	// fmt.Println(ids, " ")
+	// fmt.Println(burst_times, " ")
+	// fmt.Println(arriving_times," ")
 }
