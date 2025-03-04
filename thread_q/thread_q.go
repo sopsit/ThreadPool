@@ -18,6 +18,7 @@ type TaskQueue struct {
 	tasks []Task
 	mutex Mutex.Mymutex
 }
+//read from file and add the task id
 func (tq *TaskQueue) Set_id(num []int) () {
 	
 	tq.tasks = make([]Task, len(num))
@@ -26,12 +27,16 @@ func (tq *TaskQueue) Set_id(num []int) () {
 	}
 	
 }
+//read from file and add the task burst time
+
 func (tq *TaskQueue)Set_burst(num []int) () {
 	for i:= 0; i<len(num); i++ {
 		tq.tasks[i].Bursttime = num[i]
 	}
 	
 }
+//read from file and add the task arriving time
+
 func (tq *TaskQueue) Set_arriving(num []int) () {
 	for i:= 0; i<len(num); i++ {
 		tq.tasks[i].ExecutionTime = num[i]

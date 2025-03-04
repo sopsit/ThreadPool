@@ -6,6 +6,8 @@ import (
 	"os_prj/read"
 	"os_prj/thread_q"
 	//"sync"
+	"os_prj/Thread_pool.go"
+	"time"
 )
 
 func main() {
@@ -32,4 +34,19 @@ func main() {
 	// fmt.Println(ids, " ")
 	// fmt.Println(burst_times, " ")
 	// fmt.Println(arriving_times," ")
+
+	// Initialize Thread Pool
+	
+	// we can get the number - at present i put 5 
+	pool := Thread_pool.NewThreadPool(5, &tq)
+	pool.Start()
+
+	// Assign tasks
+	go pool.AssignTasks()
+
+	// Run simulation for 5 seconds
+	time.Sleep(5 * time.Second)
+	pool.Stop()
+
+	fmt.Println("Simulation Complete!")
 }
