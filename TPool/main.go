@@ -63,7 +63,7 @@ func main() {
 // 		time.Sleep(time.Until(addtime))
 // 		fmt.Println(t)
 // 	}
-      a := TreadPool.NewTredpool(5)
+      a := TreadPool.NewTredpool(55)
 	  //err := a.AddToQueue("id.txt" , "arriving_time.txt" , "burst_time.txt")
 	 // if err != nil {fmt.Println(err.Error())}
 	 a.PoolManager("id.txt" , "arriving_time.txt" , "burst_time.txt")
