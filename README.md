@@ -40,7 +40,7 @@ ThreadPool/ TPool
 first of all, in the main function, a defined as a Thread pool, the files are read and store in structure. after reading from files, if the tasks arriving time has passed, it being Enqueued. in Work() function, the threads tasks are dequeued. it means that task is executing. in output, id of task, starting and finishing time, total time of proceccing and the number of Workers will be showed.
 
 - tips:
-  - The size of queue is important and is considerd
+  - The arriving file is sorted
   - The mutex that has been wrote in mutex file has used
   - Handling situations where the entry time has not yet arrived  
 
