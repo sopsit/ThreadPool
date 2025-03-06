@@ -90,7 +90,7 @@ func (tp *MyTreadPool) AddToQueue (file1 string , file2 string ) error{
 
 
 
-func (tp *MyTreadPool) Work(num int) {
+func (tp *MyTreadPool) Work() {
 
 	flag := false
 
@@ -156,7 +156,7 @@ func (tp *MyTreadPool) PoolManager(F1 string , F2 string ) {
 	go tp.AddToQueue(F1 , F2 )
 
 	for i:= 0 ; i < tp.Workersnum ; i++ {
-		go tp.Work(i+1)
+		go tp.Work()
 	}
 
 	tp.Wait()
