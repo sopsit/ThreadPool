@@ -1,8 +1,6 @@
 package Mutex
 
 import (
-	//"runtime"
-	//"fmt"
 	"sync/atomic"
 )
 
@@ -10,26 +8,23 @@ type Mymutex struct {
 	state uint32 // 0 = unlocked, 1 = locked
 }
 
+
 func (mut * Mymutex) Reset() {
 
 	atomic.StoreUint32(&mut.state, 0)
 
 }
 
+func NMutex () *Mymutex {
+	var tempmutex Mymutex
+	tempmutex.Reset()
+	return &tempmutex
+}
+
 func (mut * Mymutex) Lock() {
-	//for {
-	//	if atomic.CompareAndSwapUint32(&m.state, 0, 1) {
-			// Successfully acquired the lock
-		//	return
-	//	}
-		// Lock is currently held.  Yield the processor to allow other
-		// goroutines to run.  This prevents a tight loop that consumes
-		// CPU unnecessarily.
-		//runtime.Gosched()
-	//}
 
 	for !atomic.CompareAndSwapUint32(&mut.state , 0 , 1) {
-              // waite
+              // wait
 	}
 	//fmt.Println(mut.state)
 }

@@ -1,0 +1,61 @@
+
+File_1:
+
+ Task 1 started at Wed, 05 Mar 2025 20:58:31 PST
+ Task 2 started at Wed, 05 Mar 2025 20:58:32 PST
+ Task 1 finished at Wed, 05 Mar 2025 20:58:33 PST
+ Task 3 started at Wed, 05 Mar 2025 20:58:33 PST
+ Task 5 started at Wed, 05 Mar 2025 20:58:34 PST
+ Task 4 started at Wed, 05 Mar 2025 20:58:34 PST
+ Task 3 finished at Wed, 05 Mar 2025 20:58:34 PST
+ Task 2 finished at Wed, 05 Mar 2025 20:58:35 PST
+ Task 5 finished at Wed, 05 Mar 2025 20:58:35 PST
+ Task 6 started at Wed, 05 Mar 2025 20:58:35 PST
+ Task 8 started at Wed, 05 Mar 2025 20:58:36 PST
+ Task 7 started at Wed, 05 Mar 2025 20:58:36 PST
+ Task 4 finished at Wed, 05 Mar 2025 20:58:36 PST
+ Task 9 started at Wed, 05 Mar 2025 20:58:37 PST
+ Task 6 finished at Wed, 05 Mar 2025 20:58:37 PST
+ Task 10 started at Wed, 05 Mar 2025 20:58:39 PST
+ Task 7 finished at Wed, 05 Mar 2025 20:58:39 PST
+ Task 8 finished at Wed, 05 Mar 2025 20:58:39 PST
+ Task 10 finished at Wed, 05 Mar 2025 20:58:40 PST
+ Task 9 finished at Wed, 05 Mar 2025 20:58:44 PST 
+ Done! 
+ Program execution time: 16.00      
+ TotalTasks: 10
+ NumberofworkerThreads: 5
+ NumberofUsedworkerThreads: 5       
+ Queuesize: 20
+
+ File_2
+ Task 4 started at Wed, 05 Mar 2025 21:00:21 PST
+ Task 5 started at Wed, 05 Mar 2025 21:00:21 PST
+ Task 1 started at Wed, 05 Mar 2025 21:00:21 PST
+ Task 2 started at Wed, 05 Mar 2025 21:00:21 PST
+ Task 3 started at Wed, 05 Mar 2025 21:00:21 PST
+ Task 5 finished at Wed, 05 Mar 2025 21:00:22 PST
+ Task 4 finished at Wed, 05 Mar 2025 21:00:22 PST
+ Task 1 finished at Wed, 05 Mar 2025 21:00:23 PST 
+ Task 2 finished at Wed, 05 Mar 2025 21:00:24 PST 
+ Task 3 finished at Wed, 05 Mar 2025 21:00:31 PST 
+ Done!
+ Program execution time: 12.00 
+ TotalTasks: 5
+ NumberofworkerThreads: 5      
+ NumberofUsedworkerThreads: 5  
+ Queuesize: 10
+
+ File_3
+ Task 1 started at Wed, 05 Mar 2025 21:03:34 PST 
+ Task 2 started at Wed, 05 Mar 2025 21:03:38 PST 
+ Task 1 finished at Wed, 05 Mar 2025 21:03:39 PST 
+ Task 2 finished at Wed, 05 Mar 2025 21:03:40 PST 
+ Task 3 started at Wed, 05 Mar  2025  21:03:43 PST 
+ Task 3 finished at Wed, 05 Mar 2025 21:03:44 PST 
+ Done! 
+ Program execution time: 14.00 
+ TotalTasks: 3
+ NumberofworkerThreads: 8
+ NumberofUsedworkerThreads: 3
+ Queuesize: 5
